@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>weight Converter</h1>
+        </div><hr>
+        <div class="inputContainer">
+            <select  id="weights">
+                <option value="ibs" selected>Ibs</option>
+                <option value="kgs">Kilograms</option>
+                <option value="gms">grams</option>
+                <option value="ozn">ounces</option>
+            </select>
+            <input type="number" id="ibsInput" placeholder="Enter your Ibs here....">
+           
+        </div>
+        <section>
+            <div class="content kg">
+                <h2>Kilograms:</h2>
+                <div class="kgrams results"></div>
+            </div>
+            <div class="content gms">
+                <h2>Grams:</h2>
+                <div class="grams results"></div>
+            </div>
+            <div class="content ozn">
+                <h2>Ounces:</h2>
+                <div class="oz results"></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
