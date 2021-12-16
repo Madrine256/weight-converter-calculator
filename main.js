@@ -20,4 +20,6 @@ const kgrams = OutClass('.kgrams'),
             ounces.innerHTML= numEntered*16;
         }
             
-    })
+    });
+
+    
