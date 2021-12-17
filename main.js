@@ -4,6 +4,7 @@
 const IbsInput = document.querySelector('#ibsInput');
 //now get the oupt divs
 const OutClass =(outputClass) => document.querySelector(outputClass);
+const error = document.querySelector('.error');
 const kgrams = OutClass('.kgrams'),
         grams = OutClass('.grams'),
         ounces = OutClass('.oz');
@@ -11,8 +12,8 @@ const kgrams = OutClass('.kgrams'),
     IbsInput.addEventListener('input', (e)=>{
         const numEntered = e.target.value;
             //check if the input is not just space or not anumber
-        if(numEntered.trim() === "" && !Number(numEntered)){
-            alert('input empty or its anumber, refresh and try again');
+        if( numEntered === "" && numEntered != NaN){
+            error.innerHTML= `input enetered is not anumber, refresh and try again`;
         }
         else{
             kgrams.innerHTML = (numEntered/2.2046).toFixed(4);
